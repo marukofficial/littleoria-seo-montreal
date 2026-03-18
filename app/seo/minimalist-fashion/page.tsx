@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Minimalist Fashion — A Philosophy of Intentional Dressing",
+  title: "Minimalist Fashion | Elevated Minimal Wardrobe",
   description:
     "Explore the principles of minimalist fashion: fewer, better pieces that simplify decisions, reduce waste, and build a wardrobe of enduring character.",
   openGraph: {
-    title: "Minimalist Fashion — Intentional Dressing | Littleoria",
+    title: "Minimalist Fashion | Elevated Minimal Wardrobe",
     description:
       "Fewer, better pieces that simplify decisions and build a wardrobe of enduring character.",
     type: "article",
@@ -126,10 +126,12 @@ export default function MinimalistFashionPage() {
       </div>
 
       <nav style={{ marginTop: "3rem", fontSize: "0.9375rem" }}>
-        <p style={{ color: "#6b6b6b", marginBottom: "0.5rem" }}>Continue reading</p>
+        <p style={{ color: "#6b6b6b", marginBottom: "0.5rem" }}>You may also explore</p>
         <Link href="/seo/swimwear">Elevated Swimwear</Link>
         {" · "}
         <Link href="/seo/clothing">Thoughtful Clothing</Link>
+        {" · "}
+        <Link href="/editorial/style-guide">The Style Guide</Link>
         {" · "}
         <Link href="/editorial/capsule-wardrobe">Capsule Wardrobe</Link>
       </nav>

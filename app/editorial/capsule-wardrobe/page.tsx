@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "The Art of the Capsule Wardrobe — A Practical Framework",
+  title: "Capsule Wardrobe Guide | Elevated Minimal Wardrobe",
   description:
     "A structured approach to building a capsule wardrobe: the essential pieces, the system of rotation, and the discipline of purposeful curation.",
   openGraph: {
-    title: "The Art of the Capsule Wardrobe | Littleoria",
+    title: "Capsule Wardrobe Guide | Elevated Minimal Wardrobe",
     description:
       "The essential pieces, the system of rotation, and the discipline of purposeful curation.",
     type: "article",
@@ -129,12 +129,14 @@ export default function CapsuleWardrobePage() {
       </div>
 
       <nav style={{ marginTop: "3rem", fontSize: "0.9375rem" }}>
-        <p style={{ color: "#6b6b6b", marginBottom: "0.5rem" }}>Continue reading</p>
+        <p style={{ color: "#6b6b6b", marginBottom: "0.5rem" }}>You may also explore</p>
         <Link href="/editorial/style-guide">The Style Guide</Link>
+        {" · "}
+        <Link href="/seo/swimwear">Elevated Swimwear</Link>
         {" · "}
         <Link href="/seo/minimalist-fashion">Minimalist Fashion</Link>
         {" · "}
-        <Link href="/seo/swimwear">Elevated Swimwear</Link>
+        <Link href="/seo/clothing">Thoughtful Clothing</Link>
       </nav>
     </article>
   );

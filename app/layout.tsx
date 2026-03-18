@@ -25,6 +25,30 @@ const STORE_JSON_LD = {
   },
 };
 
+const WEBSITE_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Littleoria",
+  url: "https://littleoria.com",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://littleoria.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+};
+
+const ORGANIZATION_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Littleoria",
+  url: "https://littleoria.com",
+  logo: "https://littleoria.com/logo.png",
+  sameAs: [
+    "https://www.instagram.com/littleoria",
+    "https://www.pinterest.com/littleoria",
+  ],
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://seo-montreal.littleoria.com"),
   title: {
@@ -54,6 +78,14 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(STORE_JSON_LD) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_JSON_LD) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_JSON_LD) }}
         />
       </head>
       <body>

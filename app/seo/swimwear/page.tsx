@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Elevated Swimwear — Minimalist Resort Pieces",
+  title: "Elevated Swimwear | Elevated Minimal Wardrobe",
   description:
     "Refined swimwear designed with intention — clean silhouettes, premium fabrics, and timeless shapes that move effortlessly from poolside to promenade.",
   openGraph: {
-    title: "Elevated Swimwear — Minimalist Resort Pieces | Littleoria",
+    title: "Elevated Swimwear | Elevated Minimal Wardrobe",
     description:
       "Refined swimwear designed with intention — clean silhouettes, premium fabrics, and timeless shapes.",
     type: "article",
@@ -121,12 +121,14 @@ export default function SwimwearPage() {
       </div>
 
       <nav style={{ marginTop: "3rem", fontSize: "0.9375rem" }}>
-        <p style={{ color: "#6b6b6b", marginBottom: "0.5rem" }}>Continue reading</p>
+        <p style={{ color: "#6b6b6b", marginBottom: "0.5rem" }}>You may also explore</p>
         <Link href="/seo/minimalist-fashion">Minimalist Fashion</Link>
         {" · "}
         <Link href="/seo/clothing">Thoughtful Clothing</Link>
         {" · "}
         <Link href="/editorial/style-guide">The Style Guide</Link>
+        {" · "}
+        <Link href="/editorial/capsule-wardrobe">Capsule Wardrobe</Link>
       </nav>
     </article>
   );

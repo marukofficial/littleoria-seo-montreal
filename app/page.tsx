@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Littleoria — Elevated Minimalist Fashion",
+  title: "Minimalist Fashion for Women | Elevated Minimal Wardrobe",
   description:
     "Discover intentionally designed pieces — swimwear, knitwear, and timeless essentials crafted for the modern wardrobe.",
 };

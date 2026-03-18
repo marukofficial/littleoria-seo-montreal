@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "The Definitive Style Guide — Building a Personal Aesthetic",
+  title: "Style Guide | Elevated Minimal Wardrobe",
   description:
     "A comprehensive style guide for developing a personal aesthetic rooted in minimalism, quality, and intentional choices that outlast seasonal trends.",
   openGraph: {
-    title: "The Definitive Style Guide | Littleoria",
+    title: "Style Guide | Elevated Minimal Wardrobe",
     description:
       "Develop a personal aesthetic rooted in minimalism, quality, and intentional choices.",
     type: "article",
@@ -134,8 +134,10 @@ export default function StyleGuidePage() {
       </div>
 
       <nav style={{ marginTop: "3rem", fontSize: "0.9375rem" }}>
-        <p style={{ color: "#6b6b6b", marginBottom: "0.5rem" }}>Continue reading</p>
+        <p style={{ color: "#6b6b6b", marginBottom: "0.5rem" }}>You may also explore</p>
         <Link href="/editorial/capsule-wardrobe">Capsule Wardrobe</Link>
+        {" · "}
+        <Link href="/seo/swimwear">Elevated Swimwear</Link>
         {" · "}
         <Link href="/seo/minimalist-fashion">Minimalist Fashion</Link>
         {" · "}
